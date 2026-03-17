@@ -1,0 +1,63 @@
+{
+  "title": "Nature Highlights",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "segments": [
+    {
+      "id": "seg_001",
+      "start": 0.0,
+      "end": 5.0,
+      "keywords": ["sunrise", "nature", "landscape"],
+      "subtitle": "Every journey begins with a single step.",
+      "transition_in": "fade",
+      "transition_out": "fade",
+      "voiceover_start": 0.0,
+      "voiceover_end": 5.0
+    },
+    {
+      "id": "seg_002",
+      "start": 5.0,
+      "end": 11.0,
+      "keywords": ["forest", "trees", "green"],
+      "subtitle": "The forest holds countless secrets.",
+      "transition_in": "fade",
+      "transition_out": "wipe",
+      "voiceover_start": 5.0,
+      "voiceover_end": 11.0
+    },
+    {
+      "id": "seg_003",
+      "start": 11.0,
+      "end": 18.0,
+      "keywords": ["ocean", "waves", "water"],
+      "subtitle": "Oceans cover over 70% of our planet.",
+      "transition_in": "wipe",
+      "transition_out": "fade",
+      "voiceover_start": 11.0,
+      "voiceover_end": 18.0
+    },
+    {
+      "id": "seg_004",
+      "start": 18.0,
+      "end": 25.0,
+      "keywords": ["mountain", "peak", "sky"],
+      "subtitle": "Mountains remind us how small we are.",
+      "transition_in": "fade",
+      "transition_out": "fade",
+      "voiceover_start": 18.0,
+      "voiceover_end": 25.0
+    },
+    {
+      "id": "seg_005",
+      "start": 25.0,
+      "end": 30.0,
+      "keywords": ["sunset", "golden hour", "horizon"],
+      "subtitle": "And every journey ends in a beautiful sunset.",
+      "transition_in": "fade",
+      "transition_out": "fade",
+      "voiceover_start": 25.0,
+      "voiceover_end": 30.0
+    }
+  ]
+}

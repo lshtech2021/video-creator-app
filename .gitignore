@@ -1,0 +1,36 @@
+# Downloaded stock assets (images, video clips)
+cache/assets/
+# Generated segment manifests (recreated by the pipeline)
+cache/manifests/
+# Pipeline stage sentinels
+cache/stages/
+# Normalized audio
+cache/voiceover_normalized.wav
+# Rendered video intermediate
+cache/render_output.mp4
+# Render bundle JSON
+cache/render_bundle.json
+
+# Final output
+output/
+
+# Node / Remotion
+remotion/node_modules/
+remotion/dist/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.venv/
+venv/
+*.egg-info/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
