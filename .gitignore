@@ -1,0 +1,12 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Cache directory produced by stock_fetcher.py
+cache/
+
+# Distribution / packaging
+*.egg-info/
+dist/
+build/
