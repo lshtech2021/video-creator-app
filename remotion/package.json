@@ -1,0 +1,23 @@
+{
+  "name": "video-creator-remotion",
+  "version": "1.0.0",
+  "description": "Remotion renderer for the video-creator-app pipeline",
+  "remotion": "./src/index.ts",
+  "scripts": {
+    "start": "remotion studio src/index.ts",
+    "build": "remotion render src/index.ts VideoComposition",
+    "render": "remotion render src/index.ts VideoComposition"
+  },
+  "dependencies": {
+    "@remotion/cli": "^4.0.0",
+    "@remotion/media-utils": "^4.0.0",
+    "remotion": "^4.0.0",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.0",
+    "@types/react-dom": "^18.3.0",
+    "typescript": "^5.0.0"
+  }
+}
