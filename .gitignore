@@ -1,7 +1,9 @@
 # Downloaded stock assets (images, video clips)
-cache/assets/
+cache/assets/*
+!cache/assets/.gitkeep
 # Generated segment manifests (recreated by the pipeline)
-cache/manifests/
+cache/manifests/*
+!cache/manifests/.gitkeep
 # Pipeline stage sentinels
 cache/stages/
 # Normalized audio
