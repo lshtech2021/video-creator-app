@@ -1,0 +1,22 @@
+{
+  "segment_index": 2,
+  "query": "test query",
+  "generated_at": "2024-01-01T00:00:00Z",
+  "assets_per_segment": 2,
+  "assets": [
+    {
+      "provider": "test",
+      "type": "video",
+      "id": "4",
+      "url": "",
+      "local_path": null
+    },
+    {
+      "provider": "test",
+      "type": "video",
+      "id": "5",
+      "url": "",
+      "local_path": null
+    }
+  ]
+}
