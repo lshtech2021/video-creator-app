@@ -19,7 +19,6 @@ All functions are fully functional stubs:
 from __future__ import annotations
 
 import logging
-import random
 from typing import Any
 
 logger = logging.getLogger(__name__)
@@ -65,9 +64,8 @@ def expand_keywords(
         for key, synonyms in synonym_map.items():
             if key in kw.lower():
                 extras.extend(s for s in synonyms if s not in keywords)
-    # Shuffle for variety and cap at n
-    random.shuffle(extras)
-    result = list(dict.fromkeys(extras))[:n]  # deduplicate, preserve order
+    # Deduplicate and cap at n (sorted for determinism)
+    result = list(dict.fromkeys(sorted(extras)))[:n]
     logger.debug(
         "AI keyword expansion (stub): %s → +%s", keywords, result
     )

@@ -58,4 +58,6 @@ export interface RenderBundle {
   fps: number;
   width: number;
   height: number;
+  /** Base URL used to serve cached assets (default: "/cache"). */
+  cacheDir?: string;
 }

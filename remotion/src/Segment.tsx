@@ -21,6 +21,8 @@ interface SegmentProps {
   /** Total duration of this segment in frames */
   durationFrames: number;
   fps: number;
+  /** Base URL for cached assets. Defaults to "/cache". Override in deployments. */
+  cacheDir?: string;
 }
 
 /** Pick the best asset from the manifest (prefer video, then photo). */
@@ -56,6 +58,7 @@ export const SegmentScene: React.FC<SegmentProps> = ({
   manifest,
   durationFrames,
   fps,
+  cacheDir = "/cache",
 }) => {
   const frame = useCurrentFrame();
   const asset = pickAsset(manifest.assets);
@@ -69,14 +72,6 @@ export const SegmentScene: React.FC<SegmentProps> = ({
   );
 
   // Transition-out: progress goes 0→1 over the last TRANSITION_FRAMES
-  const transitionOutProgress = interpolate(
-    frame,
-    [durationFrames - TRANSITION_FRAMES, durationFrames],
-    [0, 1],
-    { extrapolateLeft: "clamp", extrapolateRight: "clamp" }
-  );
-
-  // For the transition-out, render a darkening overlay
   const transitionOutOpacity = interpolate(
     frame,
     [durationFrames - TRANSITION_FRAMES, durationFrames],
@@ -106,14 +101,14 @@ export const SegmentScene: React.FC<SegmentProps> = ({
       {asset ? (
         asset.type === "video" ? (
           <Video
-            src={resolveUrl(asset)}
+            src={resolveUrl(asset, cacheDir)}
             style={mediaStyle}
             muted
             loop
           />
         ) : (
           <Img
-            src={resolveUrl(asset)}
+            src={resolveUrl(asset, cacheDir)}
             style={{
               ...mediaStyle,
               // Subtle Ken Burns zoom for static images

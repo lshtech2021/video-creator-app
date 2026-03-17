@@ -8,7 +8,7 @@
  * transition window and drive `progress` with `interpolate`.
  */
 
-import React, { CSSProperties } from "react";
+import React from "react";
 
 // ---------------------------------------------------------------------------
 // Fade transition

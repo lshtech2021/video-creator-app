@@ -19,8 +19,6 @@ For each EDL segment the script:
      cache/assets/<segment_id>/.
   3. Writes a per-segment manifest JSON to
      cache/manifests/segment_<segment_id>.json.
-
-The manifest format is documented in docs/manifest_schema.md.
 """
 
 from __future__ import annotations

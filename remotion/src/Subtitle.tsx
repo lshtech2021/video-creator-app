@@ -6,7 +6,7 @@
  */
 
 import React from "react";
-import { interpolate, useCurrentFrame, useVideoConfig } from "remotion";
+import { interpolate, useCurrentFrame } from "remotion";
 
 interface SubtitleProps {
   text: string;

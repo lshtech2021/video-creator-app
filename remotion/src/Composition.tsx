@@ -16,6 +16,7 @@ export const VideoComposition: React.FC<CompositionProps> = ({
   edl,
   manifests,
   fps,
+  cacheDir,
 }) => {
   const { fps: videoFps } = useVideoConfig();
   const activeFps = fps ?? videoFps;
@@ -58,6 +59,7 @@ export const VideoComposition: React.FC<CompositionProps> = ({
               manifest={manifest}
               durationFrames={durationFrames}
               fps={activeFps}
+              cacheDir={cacheDir}
             />
           </Sequence>
         );
